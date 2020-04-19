@@ -1,0 +1,18 @@
+.header {
+    position:relative;
+    top:-15vh;
+    height: 62vh;
+    overflow: hidden;
+        img {
+            width: 100%;
+        }
+}
+.centered {
+    position: absolute;
+    top: 65%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+        img {
+            width: 68%;
+        }
+}
