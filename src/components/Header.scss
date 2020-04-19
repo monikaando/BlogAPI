@@ -1,10 +1,15 @@
 .header {
     position:relative;
     top:-15vh;
-    height: 62vh;
+    height: 64vh;
     overflow: hidden;
-        img {
+        .header_img {
             width: 100%;
+            -webkit-filter: brightness(65%);
+            -moz-filter: brightness(65%); 
+        }
+    @media screen and (max-width: 1000px) { 
+        top:-5vh
         }
 }
 .centered {
@@ -15,4 +20,11 @@
         img {
             width: 68%;
         }
+    @media screen and (max-width: 1000px) { 
+        top: 40%;
+            img {
+                width: 100%;
+            }
+        }
+            
 }
