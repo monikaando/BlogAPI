@@ -4,7 +4,7 @@ import './Footer.scss'
 export default function Footer() {
     return (
         <div className="footer">
-            <h4>React assignment created by <u>Monika Swidzinska</u> for Social Brothers</h4>
+            <h4>React assignment created by <a href="https://github.com/mswidzinska">Monika Swidzinska</a> for Social Brothers</h4>
         </div>
     )
 }

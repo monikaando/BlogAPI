@@ -9,4 +9,4 @@ According to an example imagine I took the following steps:
 * Form
 * Articles
 * Footer
-
+    Additional element
