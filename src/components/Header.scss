@@ -5,10 +5,9 @@
     overflow: hidden;
         .header_img {
             width: 100%;
-            -webkit-filter: brightness(65%);
-            -moz-filter: brightness(65%); 
+            filter: brightness(65%);
         }
-    @media screen and (max-width: 1000px) { 
+    @media screen and (max-width: 900px) { 
         top:-5vh
         }
 }
@@ -20,7 +19,7 @@
         img {
             width: 68%;
         }
-    @media screen and (max-width: 1000px) { 
+    @media screen and (max-width: 900px) { 
         top: 40%;
             img {
                 width: 100%;
