@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Form.scss'
+import '../styles/Form.scss'
 
 class Form extends Component {
     constructor(props){
@@ -23,6 +23,7 @@ class Form extends Component {
     }
     // handleSubmit
     // e.preventDefault();
+    //put API and button form not possible to click before everything is filled in
    handleInputChange(e) {
         e.preventDefault();
         console.log(this.state.formControls);
@@ -35,8 +36,8 @@ class Form extends Component {
     }
     render() {
         return (
-            <div className='form'>
-                <form onSubmit={this.handleSubmit}>
+            <div className="form-box">
+                <form>
                 <label>Berichtnaam
                 <input 
                     type="text"
@@ -48,7 +49,7 @@ class Form extends Component {
                 </label>
                 <label>Categorie
                     <select value={this.state.formControls.categorie.value} onChange={this.handleInputChange}>
-                        <option selected>{this.state.formControls.categorie.placeholder}</option>
+                        <option defaultValue>{this.state.formControls.categorie.placeholder}</option>
                         <option value="categorie 1">Categorie 1</option>
                         <option value="categorie 2">Categorie 2</option>
                         <option value="categorie 3">Categorie 3</option>
@@ -64,9 +65,9 @@ class Form extends Component {
                     onChange={this.handleInputChange}
                 />
                 </label>
-                 <input type="submit" value="Submit" />
+                 <button type="submit" value="Bericht aanmaken" onSubmit={this.handleSubmit}>Bericht aanmaken</button>
                 </form>
-            </div>
+        </div>
         )
     }
 }
