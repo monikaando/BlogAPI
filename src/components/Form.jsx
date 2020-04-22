@@ -14,9 +14,9 @@ class Form extends Component {
         }
     }
     this.handleInputChange = this.handleInputChange.bind(this);
-    this.handleAddPostSubmit = this.handleAddPostSubmit.bind(this);
+    this.handleAddPost = this.handleAddPost.bind(this);
     }
-    handleAddPostSubmit(e) {
+    handleAddPost(e) {
     e.preventDefault();
     // console.log(this.state.formControls);
     axios({
@@ -29,14 +29,12 @@ class Form extends Component {
       }
     })
       .then(response => {
-          debugger
-        // console.log(response);
-        console.log("Sent!")
-        this.props.history.push(`posts/${response.data._id}`);
+        console.log(response);
+        console.log("Sent!!!!")
       })
-      .catch((error) => {
-        this.setState({error: error.response.data.message})
-      });
+      .catch((err)=> {
+          console.log( "Not sent :(")
+    })
     }
 
     //put API and button form not possible to click before everything is filled in
@@ -53,7 +51,7 @@ class Form extends Component {
     render() {
         return (
             <div className="form-box">
-                <form onSubmit={this.handleAddPostSubmit}>
+                <form>
                     <label>Berichtnaam</label>
                     <input 
                         type="text"
@@ -80,7 +78,8 @@ class Form extends Component {
                         onChange={this.handleInputChange}
                     />
                 <div className="button-box">
-                    <button type="submit">Bericht aanmaken</button>
+                    {/* <button type="submit" onSubmit={this.handleAddPost}>Bericht aanmaken</button> */}
+                    <button onClick={this.handleAddPost}>Bericht aanmaken</button>
                 </div>
             </form>
         </div>
