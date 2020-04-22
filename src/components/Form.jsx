@@ -1,28 +1,44 @@
 import React, { Component } from 'react';
 import '../styles/Form.scss'
+import axios from 'axios';
+import qs from "qs";
 
 class Form extends Component {
     constructor(props){
     super(props);
     this.state = {
         formControls: {
-            berichtnaam:{
-                value: "",
-                placeholder: "Geen titel"
-            },
-            categorie: {
-                value: "",
-                placeholder: "Geen categorie"
-            },
-            bericht:{
-                value: ""
-            }
+            title:"",
+            category_id: 0,
+            content:""
         }
     }
     this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleAddPostSubmit = this.handleAddPostSubmit.bind(this);
     }
-    // handleSubmit
-    // e.preventDefault();
+    handleAddPostSubmit(e) {
+    e.preventDefault();
+    // console.log(this.state.formControls);
+    axios({
+      method: "POST",
+      url: `http://178.62.198.162/api/posts`,
+      data: qs.stringify(this.state.formControls),
+      headers: {
+        'Authorization': 'pj11daaQRz7zUIH56B9Z',
+        'Content-Type': 'application/json'
+      }
+    })
+      .then(response => {
+          debugger
+        // console.log(response);
+        console.log("Sent!")
+        this.props.history.push(`posts/${response.data._id}`);
+      })
+      .catch((error) => {
+        this.setState({error: error.response.data.message})
+      });
+    }
+
     //put API and button form not possible to click before everything is filled in
    handleInputChange(e) {
         e.preventDefault();
@@ -37,35 +53,34 @@ class Form extends Component {
     render() {
         return (
             <div className="form-box">
-                <form>
+                <form onSubmit={this.handleAddPostSubmit}>
                     <label>Berichtnaam</label>
                     <input 
                         type="text"
-                        name="berichtnaam"
-                        value={this.state.formControls.berichtnaam.value}
-                        placeholder={this.state.formControls.berichtnaam.placeholder}
+                        name="title"
+                        value={this.state.formControls.title}
+                        placeholder="Geen titel"
                         onChange={this.handleInputChange}
                     />      
                     <label>Categorie</label>
-                        <select className="no-radius" value={this.state.formControls.categorie.value} onChange={this.handleInputChange}>
-                            <option value="" disabled defaultValue hidden>{this.state.formControls.categorie.placeholder}</option>
-                            <option value="categorie 1">Categorie 1</option>
-                            <option value="categorie 2">Categorie 2</option>
-                            <option value="categorie 3">Categorie 3</option>
-                            <option value="categorie 4">Categorie 4</option>
-                            <option value="categorie 5">Categorie 5</option>
+                        <select name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
+                            <option value={0} disabled defaultValue hidden>Geen categorie</option>
+                            <option value={1}>Tech</option>
+                            <option value={2}>Nieuws</option>
+                            <option value={3}>Sports</option>
+                            <option value={4}>Lokaal</option>
                         </select>
                     
                     <label>Bericht</label>
                     <textarea 
                         className="bericht"
                         type="text"
-                        name="bericht"
-                        value={this.state.formControls.bericht.value}
+                        name="content"
+                        value={this.state.formControls.content}
                         onChange={this.handleInputChange}
                     />
                 <div className="button-box">
-                    <button type="submit" value="Bericht aanmaken" onSubmit={this.handleSubmit}>Bericht aanmaken</button>
+                    <button type="submit">Bericht aanmaken</button>
                 </div>
             </form>
         </div>

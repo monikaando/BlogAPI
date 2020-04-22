@@ -19,3 +19,16 @@ function App() {
 }
 
 export default App;
+// class App extends Component {
+  
+//   render() {
+//     return (
+//       <div className="App">
+//             <Route exact path="/" component={Home}></Route>
+//             <Route exact path="/postName" component={SinglePost}></Route>
+//       </div>
+//     );
+//   }
+// }
+
+// export default App;
