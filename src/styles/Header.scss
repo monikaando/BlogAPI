@@ -1,15 +1,33 @@
 .header {
     position:relative;
-    top:-15vh;
-    height: 64vh;
     overflow: hidden;
         .header_img {
             width: 100%;
             filter: brightness(65%);
         }
-    @media screen and (max-width: 900px) { 
-        top:-5vh
-        }
+    @media screen 
+    and (min-width: 300px)
+    and (max-width: 700px) { 
+        margin-top: -5vh;
+        height: 30vh;
+    }
+    @media screen 
+    and (min-width: 701px) 
+    and (max-width: 900px) { 
+        margin-top: -10vh;
+        height:40vh;
+    }
+    @media screen 
+    and (min-width: 901px)
+    and (max-width: 1200px) { 
+        margin-top: -10vh;
+        height:50vh;
+    }
+    @media screen 
+    and (min-width: 1201px) { 
+        margin-top: -17vh;
+        height: 63vh;
+    }
 }
 .logo-centered {
     position: absolute;
@@ -20,7 +38,7 @@
             width: 68%;
         }
     @media screen and (max-width: 900px) { 
-        top: 40%;
+        top: 60%;
             img {
                 width: 100%;
             }

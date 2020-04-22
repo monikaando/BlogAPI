@@ -18,3 +18,5 @@ According to instructions an the image with layout o the page, I took the follow
 Application is made by instruction and image from Social Brothers
 Application is responsive.
 I made code clean and readable
+I used cloudinary for some images
+
