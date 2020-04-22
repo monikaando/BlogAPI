@@ -1,6 +1,12 @@
 .postsList {
     background-color: rgb(255,255,255);
-    width: 40%;
+    width: 500px;
     margin: 0 5% 15% 5%;
     height: 722px;
+    @media screen 
+    and (min-width: 800px)
+    and (max-width: 1240px)  { 
+      width: 400px;
+      margin: 0 2% 15% 2%;
+      }
 }

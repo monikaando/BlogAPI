@@ -18,8 +18,7 @@ h4 {
 }
 .blog {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-around;
   align-items: center;
-  margin: 0 2%;
 }

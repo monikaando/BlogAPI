@@ -1,7 +1,13 @@
 .form-box {
     background-color: rgb(255,255,255);
-    width: 40%;
-    margin: 0 0 15% 5%;
+    width: 500px;
+    margin: 0 5% 15% 5%;
+    @media screen 
+    and (min-width: 800px)
+    and (max-width: 1300px)  { 
+      width: 400px;
+      margin: 0 2% 15% 2%;
+      }
 }
 form {
     display: flex;
@@ -37,13 +43,25 @@ form {
     }
     button {
         background-color:rgb(242,118,35);
-        width: 32%;
         margin-top: 20px;
-        padding: 10px 0;
+        padding: 10px 10px;
         border-radius: 20px;
         color: rgb(255, 255, 255);
         border: none;
         font-weight: 700;
+        @media screen 
+        and (min-width: 200px)
+        and (max-width: 800px)  { 
+            width: 100%;
+            }
+        @media screen 
+        and (min-width: 801px)
+        and (max-width: 1200px) { 
+            width: 47%;
+            }
+        @media screen and (min-width: 1201px) { 
+            width: 32%;
+            }
     }
 }
 .bericht {
