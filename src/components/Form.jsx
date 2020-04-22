@@ -57,7 +57,7 @@ class Form extends Component {
                         </select>
                     
                     <label>Bericht</label>
-                    <input 
+                    <textarea 
                         className="bericht"
                         type="text"
                         name="bericht"

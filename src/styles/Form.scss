@@ -24,17 +24,26 @@ form {
         border: none;
         color: rgb(193,193,193);
         height: 50px;
-        
     }
     select {
         border: none;
         color: rgb(193,193,193);
         height: 50px;
-        text-indent: 13px;
-        font-style: italic;     
+        text-indent: 21px;
+        font-style: italic;    
+        background: url(https://res.cloudinary.com/mokaweb/image/upload/v1587548853/Icons/chevron_down.png) no-repeat right  rgb(250,250,250);
+        -webkit-appearance: none;
+        background-position-x: 420px;
+        border-radius: 0;
         option {
             color: rgb(193,193,193);
         }
+    }
+    textarea {
+        border: none;
+        background-color: rgb(250,250,250);
+        color: rgb(193,193,193);
+        resize: vertical;
     }
     .button-box {
         display: flex;
