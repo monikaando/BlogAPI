@@ -18,15 +18,16 @@ class Form extends Component {
     }
     handleAddPost(e) {
     e.preventDefault();
-    // console.log(this.state.formControls);
+    console.log(this.state.formControls);
     axios({
       method: "POST",
-      url: `http://178.62.198.162/api/posts`,
+      url: `http://178.62.198.162/api/posts/`,
       data: qs.stringify(this.state.formControls),
-      headers: {
-        'Authorization': 'pj11daaQRz7zUIH56B9Z',
-        'Content-Type': 'application/json'
+      "headers": {
+        'token': 'pj11daaQRz7zUIH56B9Z',
+        "Content-Type": "application/x-www-form-urlencoded"
       }
+      
     })
       .then(response => {
         console.log(response);
@@ -37,7 +38,8 @@ class Form extends Component {
     })
     }
 
-    //put API and button form not possible to click before everything is filled in
+
+    
    handleInputChange(e) {
         e.preventDefault();
         console.log(this.state.formControls);
