@@ -10,9 +10,8 @@ class PostsList extends Component {
             err: null
         }
         this.getPosts = this.getPosts.bind(this);
-        // this.loadMore = this.loadMore.bind(this);
-
     }
+
     componentDidMount() {
         this.getPosts()
     }
@@ -29,25 +28,36 @@ class PostsList extends Component {
                 posts: (res.data).slice(0,4)
             })
             console.log(this.state.posts)
+            console.log((res.data).length)
         })
+        .catch((err)=> {
+          console.log( "Not sent :(")
+    })
     }
+
+  
     render() {
       return (
-        <div className="postsList">
-        <button onClick={this.getPosts}>Meer laden</button>
-            {this.state.posts.map((post, i) => (
-                <div key={i}>
-                    <img src={post.img_url} alt=""/>
-                    <p>{post.created_at}</p>
-                    {/* <p>{post.category.name}</p> */}
-                    <h1>{post.title}</h1>
-                    <p>{post.content}</p>
-                </div>
-            ))}
-            
-          
+        <div className="blogPosts-box">
+            <div className="postsList">
+                {this.state.posts.map((post, i) => (
+                    <div className="single-blog-post" key={i}>
+                        <div className="image-box">
+                            <img src={post.img_url} alt=""/>
+                            <h6>{post.created_at}</h6>
+                            {/* <p>{post.category.name}</p> */}
+                        </div>
+                        <div className="text-box">
+                            <h3>{post.title}</h3>
+                            <p>{post.content}</p>
+                        </div>
+                    </div>
+                    ))}
+            </div>
+            <button onClick={this.getPosts}>Meer laden</button>
         </div>
       );
+
     }
   
 }
