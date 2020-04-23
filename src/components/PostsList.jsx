@@ -6,7 +6,7 @@ class PostsList extends Component {
     constructor(props) {
         super(props);
         this.state={
-            posts: [{}],
+            posts: [],
             err: null
         }
         this.getPosts = this.getPosts.bind(this);
@@ -26,29 +26,11 @@ class PostsList extends Component {
         })
         .then(res => {
             this.setState({
-                posts: res.data
+                posts: (res.data).slice(0,4)
             })
             console.log(this.state.posts)
         })
     }
-    // loadMore(){
-    //     axios.all([
-    //         axios({
-    //             method:"GET",
-    //             url:"http://178.62.198.162/api/posts?page=46",
-    //             headers: {
-    //                 'token': "pj11daaQRz7zUIH56B9Z",
-    //             }
-    //         })
-    //     ])
-    //     .then(res => {
-    //         console.log(res.data)
-    //         this.setState({
-    //             posts: res.data
-    //         })
-    //         console.log(this.state.posts)
-    //     })
-    // }
     render() {
       return (
         <div className="postsList">
@@ -57,10 +39,9 @@ class PostsList extends Component {
                 <div key={i}>
                     <img src={post.img_url} alt=""/>
                     <p>{post.created_at}</p>
+                    {/* <p>{post.category.name}</p> */}
                     <h1>{post.title}</h1>
-                    <h2>{post.category_id}</h2>
                     <p>{post.content}</p>
-                    <h1>test</h1>
                 </div>
             ))}
             
