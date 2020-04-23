@@ -44,7 +44,7 @@ class PostsList extends Component {
                     <div className="single-blog-post" key={i}>
                         <div className="image-box">
                             <img src={post.img_url} alt=""/>
-                            <h6>{post.created_at}</h6>
+                            <h6>{(post.created_at).slice(0,10)}</h6> 
                             {/* <p>{post.category.name}</p> */}
                         </div>
                         <div className="text-box">
