@@ -21,8 +21,9 @@ form {
     input {
         background-color: rgb(250,250,250);
         border: none;
-        color: rgb(193,193,193);
+        color: rgb(27, 27, 27);
         height: 50px;
+        padding-left:21px;
     }
     select {
         border: none;
@@ -41,8 +42,9 @@ form {
     textarea {
         border: none;
         background-color: rgb(250,250,250);
-        color: rgb(193,193,193);
         resize: vertical;
+        color: rgb(27, 27, 27);
+        padding: 20px 0 0 21px;
     }
     .button-box {
         display: flex;
@@ -78,7 +80,6 @@ form {
 
 ::placeholder {
     color: rgb(193,193,193);
-    padding-left: 20px;
     font-style: italic;
 }
 input:focus, select:focus, textarea:focus { 

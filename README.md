@@ -11,9 +11,11 @@ According to instructions an the image with layout o the page, I took the follow
     2. It is possible to extend a text area of "Bericht" vertically.
     3. I added extra frame (orange frame appears when the field is clicked)
     4. The whole form is responsive.
-    5. Form is sending data
-    6. I used Reactjs-popup
+    5. Form is sending data to the server through the API
+    5. Pop after submitting a form informing that data was send.
 * Blogposts list
+    1. I created posts to look as similar as possible according to the example image (dimentions, colors, fonts)
+    2. 
 * Footer
     Additional element with link to my github page
 

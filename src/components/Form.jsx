@@ -10,7 +10,7 @@ class Form extends Component {
     this.state = {
         formControls: {
             title:"",
-            category_id: 0,
+            category_id:0,
             content:"",
             showPopup: false
         }
@@ -38,14 +38,14 @@ class Form extends Component {
         this.setState({
           formControls: {
             title:"",
-            category_id: 0,
-            content:"",
+            category_id:0,
+            content:""
         }
         })
         this.togglePopup();
       })
       .catch((err)=> {
-          console.log( "Not sent :(")
+          console.log( "Not sent")
     })
     }    
    togglePopup() {
@@ -77,7 +77,7 @@ class Form extends Component {
                         onChange={this.handleInputChange}
                     />      
                     <label>Categorie</label>
-                        <select type= "number" name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
+                        <select type="number" name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
                             <option name="category_id" value={0} disabled defaultValue hidden>Geen categorie</option>
                             <option name="category_id" value={1}>Tech</option>
                             <option name="category_id" value={2}>Nieuws</option>
