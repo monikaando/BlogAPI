@@ -21,7 +21,7 @@ class Form extends Component {
     console.log(this.state.formControls);
     axios({
       method: "POST",
-      url: `http://178.62.198.162/api/posts/`,
+      url: `http://178.62.198.162/api/posts`,
       data: qs.stringify(this.state.formControls),
       "headers": {
         'token': 'pj11daaQRz7zUIH56B9Z',
@@ -31,15 +31,12 @@ class Form extends Component {
     })
       .then(response => {
         console.log(response);
-        console.log("Sent!!!!")
+        // console.log("Sent!!!!")
       })
       .catch((err)=> {
           console.log( "Not sent :(")
     })
-    }
-
-
-    
+    }    
    handleInputChange(e) {
         e.preventDefault();
         console.log(this.state.formControls);
@@ -63,12 +60,12 @@ class Form extends Component {
                         onChange={this.handleInputChange}
                     />      
                     <label>Categorie</label>
-                        <select name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
-                            <option value={0} disabled defaultValue hidden>Geen categorie</option>
-                            <option value={1}>Tech</option>
-                            <option value={2}>Nieuws</option>
-                            <option value={3}>Sports</option>
-                            <option value={4}>Lokaal</option>
+                        <select type= "number" name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
+                            <option name="category_id" value={0} disabled defaultValue hidden>Geen categorie</option>
+                            <option name="category_id" value={1}>Tech</option>
+                            <option name="category_id" value={2}>Nieuws</option>
+                            <option name="category_id" value={3}>Sports</option>
+                            <option name="category_id" value={4}>Lokaal</option>
                         </select>
                     
                     <label>Bericht</label>

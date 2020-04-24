@@ -21,6 +21,7 @@ class PostsList extends Component {
             url: "http://178.62.198.162/api/posts",
             headers: {
               'token': "pj11daaQRz7zUIH56B9Z",
+              'Content-Type': "application/x-www-form-urlencoded"
             }
         })
         .then(res => {
