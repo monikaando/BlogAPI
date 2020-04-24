@@ -10,12 +10,13 @@ class Form extends Component {
         formControls: {
             title:"",
             category_id: 0,
-            content:""
+            content:"",
         }
     }
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleAddPost = this.handleAddPost.bind(this);
     }
+
     handleAddPost(e) {
     e.preventDefault();
     console.log(this.state.formControls);
@@ -31,7 +32,13 @@ class Form extends Component {
     })
       .then(response => {
         console.log(response);
-        // console.log("Sent!!!!")
+        this.setState({
+          formControls: {
+            title:"",
+            category_id: 0,
+            content:"",
+        }
+        })
       })
       .catch((err)=> {
           console.log( "Not sent :(")
@@ -78,7 +85,7 @@ class Form extends Component {
                     />
                 <div className="button-box">
                     {/* <button type="submit" onSubmit={this.handleAddPost}>Bericht aanmaken</button> */}
-                    <button onClick={this.handleAddPost}>Bericht aanmaken</button>
+                    <button onClick={this.handleAddPost} >Bericht aanmaken</button>
                 </div>
             </form>
         </div>
