@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/Form.scss'
 import axios from 'axios';
 import qs from "qs";
+import Popup from './Popup'; 
 
 class Form extends Component {
     constructor(props){
@@ -11,10 +12,12 @@ class Form extends Component {
             title:"",
             category_id: 0,
             content:"",
+            showPopup: false
         }
     }
     this.handleInputChange = this.handleInputChange.bind(this);
     this.handleAddPost = this.handleAddPost.bind(this);
+    this.togglePopup = this.togglePopup.bind(this);
     }
 
     handleAddPost(e) {
@@ -39,14 +42,21 @@ class Form extends Component {
             content:"",
         }
         })
+        this.togglePopup();
       })
       .catch((err)=> {
           console.log( "Not sent :(")
     })
     }    
+   togglePopup() {
+        this.setState({
+            formControls: {
+                showPopup: !this.state.formControls.showPopup
+            }
+   });
+ } 
    handleInputChange(e) {
         e.preventDefault();
-        console.log(this.state.formControls);
         let updatedControls = {...this.state.formControls};
         updatedControls[e.target.name] = e.target.value;
         console.log(this.state.formControls)
@@ -84,8 +94,14 @@ class Form extends Component {
                         onChange={this.handleInputChange}
                     />
                 <div className="button-box">
-                    {/* <button type="submit" onSubmit={this.handleAddPost}>Bericht aanmaken</button> */}
-                    <button onClick={this.handleAddPost} >Bericht aanmaken</button>
+                   <button onClick={this.handleAddPost}>Bericht aanmaken</button>
+                    {this.state.formControls.showPopup ?  
+                        <Popup  
+                        text='Bericht toegevoegd'  
+                        closePopup={this.togglePopup}  
+                        />  
+                    : null  
+                    }  
                 </div>
             </form>
         </div>
