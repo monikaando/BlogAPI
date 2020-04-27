@@ -32,7 +32,7 @@ To run the application: npm start after installing node modules (npm i)<
         
 - Footer<br>
 
-    An additional element with the link to my github page<br>
+    An additional element with the link to my github page (not visible on pictures below)<br>
     
     
 <b>Desktop version:</b>
