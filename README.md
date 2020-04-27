@@ -42,8 +42,8 @@ Desktop version:
 </div><br>
 
 Desktop version + "Meer laden" button
-<div style="display: flex; justify-content: center; width:50px">
-<img src="http://res.cloudinary.com/mokaweb/image/upload/c_scale,w_565/v1588015143/SocialBrothers/Desktop-meer-laden.png" />
+<div style="display: flex; justify-content: center">
+<img src="http://res.cloudinary.com/mokaweb/image/upload/c_scale,w_365/v1588015143/SocialBrothers/Desktop-meer-laden.png" />
 </div><br>
 
 Mobile version:
