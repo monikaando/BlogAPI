@@ -35,7 +35,14 @@ class PostsList extends Component {
           console.log( "Not sent :(")
     })
     }
-
+    pickTheNextPostFromArray = (anArray)=> {
+        return anArray[Math.floor(Math.random()*anArray.length)];
+    }
+        pickRandomPost = () => {
+        this.setState({
+            posts: [...this.state.posts, this.pickTheNextPostFromArray(this.state.posts), this.pickTheNextPostFromArray(this.state.posts)]
+    })
+    }
   
     render() {
       return (
@@ -55,7 +62,7 @@ class PostsList extends Component {
                     </div>
                     ))}
             </div>
-            <button onClick={this.getPosts}>Meer laden</button>
+            <button onClick={this.pickRandomPost}>Meer laden</button>
         </div>
       );
 
