@@ -7,7 +7,6 @@ To run the application: npm start after installing node modules (npm i)<
     4) For images I used Claudinary.<br>
     5) For styling I used Sass(I could use Bootstrap or Bulma (like in my previous projects), but I wanted to show that I know how CSS, Sass and responsivity works.)<br>
     
-<hr>
 
 - Header<br>
     1) The header image is from the www.werkenbijsocialbrothers.nl. I put it on my Cloudinary account. I played with the code to achieve the expected result without cropping the image.<br>
