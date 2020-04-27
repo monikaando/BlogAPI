@@ -39,14 +39,14 @@ Desktop version:
 
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
-</div>
+</div><br>
 
 Desktop version + "Meer laden" button
-<div style="display: flex; justify-content: center">
+<div style="display: flex; justify-content: center; width:50px">
 <img src="http://res.cloudinary.com/mokaweb/image/upload/c_scale,w_565/v1588015143/SocialBrothers/Desktop-meer-laden.png" />
-</div>
+</div><br>
 
 Mobile version:
-<div style="display: flex; justify-content: center, width: 120px">
+<div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_317/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
 </div>
