@@ -1,12 +1,12 @@
 To run the application: npm start after installing node modules (npm i)
 
 * Application
-    1) I made the application according to instructions and the example image from Social Brothers.
+    1. I made the application according to instructions and the example image from Social Brothers.
     2. The whole application is responsive.
     3. I made code clean and readable.
     4. I used Cloudinary for images.
     5. I used Sass for styling (I could use Bootstrap or Bulma (like in my previous projects), but I wanted to show that I know how CSS, Sass and responsivity works.)
----------
+<hr>
 * Header
     1. I took the header image from the www.werkenbijsocialbrothers.nl and I put it on my Cloudinary account. I played with the code to achieve the expected result without cropping the image.
     2. I put a darker filter on the picture.
