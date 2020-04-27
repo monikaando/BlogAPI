@@ -48,5 +48,5 @@ Desktop version + "Meer laden" button
 
 Mobile version:
 <div style="display: flex; justify-content: center, width: 120px">
-<img src="http://res.cloudinary.com/mokaweb/image/upload/c_scale,w_443/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
+<img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_317/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
 </div>
