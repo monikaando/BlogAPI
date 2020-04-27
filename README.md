@@ -31,7 +31,7 @@ To run the application: npm start after installing node modules (npm i)
         
 - <b>Footer</b><br>
 
-    An additional element with the link to my github page (not visible on pictures below)<br>
+    An additional element with the link to my github page (not visible on pictures below)<br><br>
     
     
 <b>Desktop version:</b>
