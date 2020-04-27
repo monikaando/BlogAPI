@@ -33,6 +33,20 @@ To run the application: npm start after installing node modules (npm i)<
 - Footer<br>
 
     An additional element with the link to my github page<br>
+    
+    
+Desktop version:
 
+<div style="display: flex; justify-content: center">
+<img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
+</div>
 
+Desktop version + "Meer laden" button
+<div style="display: flex; justify-content: center">
+<img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015143/SocialBrothers/Desktop-meer-laden_grf4x8.png" />
+</div>
 
+Mobile version:
+<div style="display: flex; justify-content: center">
+<img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
+</div>
