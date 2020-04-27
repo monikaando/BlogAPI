@@ -1,7 +1,7 @@
 To run the application: npm start after installing node modules (npm i)
 
 * Application
-    1. I made the application according to instructions and the example image from Social Brothers.
+    1) I made the application according to instructions and the example image from Social Brothers.
     2. The whole application is responsive.
     3. I made code clean and readable.
     4. I used Cloudinary for images.
