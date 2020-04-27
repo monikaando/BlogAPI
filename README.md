@@ -1,4 +1,4 @@
-To run the application: npm start after installing node modules (npm i)<
+To run the application: npm start after installing node modules (npm i)
 
 - Application<br>
     1) I made the application according to instructions and the example image from Social Brothers.<br>
