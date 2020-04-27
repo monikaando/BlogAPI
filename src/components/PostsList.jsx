@@ -41,22 +41,10 @@ class PostsList extends Component {
           console.log( "Not sent")
     })
     }
-
-    // pickTheNextPostFromArray = (array)=> {
-    //     for(let i=4; i<10; i++){
-    //         return array[((array.indexOf(i)) + (this.state.counter + 1))];//5
-    //     }
-    // }
-    // pickTheSecondNextPostFromArray = (array)=> {
-    //     for(let i=4; i<10; i++){
-    //         return array[((array.indexOf(i)) + (this.state.counter + 2))];//6
-    //         break;
-    //     }
-    // }
     
     loadMorePosts = () => {
     this.setState({
-        posts: [...this.state.allPosts],
+        posts: this.state.allPosts,
         counter: this.state.counter +1
     }) 
     console.log(this.state.counter)
@@ -79,8 +67,9 @@ class PostsList extends Component {
                         </div>
                     </div>
                     ))}
+                <button onClick={this.loadMorePosts}>Meer laden</button>
             </div>
-            <button onClick={this.loadMorePosts}>Meer laden</button>
+            
         </div>
       );
 
