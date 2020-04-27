@@ -70,6 +70,7 @@ class Form extends Component {
                 <form>
                     <label>Berichtnaam</label>
                     <input 
+                        aria-label="title"
                         type="text"
                         name="title"
                         value={this.state.formControls.title}
@@ -77,17 +78,18 @@ class Form extends Component {
                         onChange={this.handleInputChange}
                     />      
                     <label>Categorie</label>
-                        <select type="number" name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
-                            <option name="category_id" value={0} disabled defaultValue hidden>Geen categorie</option>
-                            <option name="category_id" value={1}>Tech</option>
-                            <option name="category_id" value={2}>Nieuws</option>
-                            <option name="category_id" value={3}>Sports</option>
-                            <option name="category_id" value={4}>Lokaal</option>
+                        <select type="number" aria-label="category" name="category_id" value={this.state.formControls.category_id} onChange={this.handleInputChange}>
+                            <option name="category_id" aria-selected = "true" value={0} disabled defaultValue hidden>Geen categorie</option>
+                            <option name="category_id" aria-selected = "false" value={1}>Tech</option>
+                            <option name="category_id" aria-selected = "false" value={2}>Nieuws</option>
+                            <option name="category_id" aria-selected = "false" value={3}>Sports</option>
+                            <option name="category_id" aria-selected = "false" value={4}>Lokaal</option>
                         </select>
                     
                     <label>Bericht</label>
                     <textarea 
                         className="bericht"
+                        aria-label="content"
                         type="text"
                         name="content"
                         value={this.state.formControls.content}

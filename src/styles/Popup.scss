@@ -23,5 +23,22 @@
     margin: auto;
     border-radius: 20px;
     background: rgb(255, 255, 255);
-    
+    @media screen 
+    and (min-width: 300px)
+    and (max-width: 750px) { 
+      left: 5%;
+      right: 10%;
+    }
+    @media screen 
+    and (min-width: 751px)
+    and (max-width: 1000px) { 
+      left: 20%;
+      right: 25%;
+    }
+    @media screen 
+    and (min-width: 1001px)
+    and (max-width: 1200px) { 
+      left: 25%;
+      right: 30%;
+    }
   }

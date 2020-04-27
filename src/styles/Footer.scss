@@ -12,4 +12,9 @@ a {
     background-color:rgba(242, 118, 35, 0.61);
     color: rgb(244,244,244);
     font-size: 12px;
+    @media screen 
+    and (min-width: 300px)
+    and (max-width: 500px) { 
+        font-size: 10px;
+    }
 }

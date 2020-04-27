@@ -35,9 +35,6 @@ class PostsList extends Component {
                 posts: (res.data).slice(0,4),
                 firstPage:true  
             })
-            console.log(this.state.posts)
-            console.log(this.state.allFirstPagePosts)
-            console.log((res.data).length)
         })
         .catch((err)=> {
           console.log( "Not sent")
