@@ -25,14 +25,14 @@ To run the application: npm start after installing node modules (npm i)<
 - Blogposts list<br>
     1) I created posts to look as similar as possible according to the example image (dimentions, colors, fonts)<br>
     2) I show data and type of category on the image (even if category or category name is empty in the database)<br>
-    3) With the first contact with the application we can see only 4 blog posts on the list.<br>
+    3) With the first contact with the application we can see only 4 blog posts from the first page on the list.<br>
     4) "Meer laden" button:<br>
         a. after the first click we can see those 6 blog posts missing from the first page (on every page we have 10 blog posts),<br>
         b. every another click shows all post from the next pages. <br>
         
 - Footer<br>
 
-    Additional element with the link to my github page<br>
+    An additional element with the link to my github page<br>
 
 
 
