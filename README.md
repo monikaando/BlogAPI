@@ -38,13 +38,13 @@ To run the application: npm start after installing node modules (npm i)
 
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
-</div>
+</div><br><br>
 
 
 <b>Desktop version + "Meer laden" button</b>
 <div style="display: flex; justify-content: center">
 <img src="http://res.cloudinary.com/mokaweb/image/upload/c_scale,w_665/v1588015143/SocialBrothers/Desktop-meer-laden.png" />
-</div>
+</div><br><br>
 
 
 <b>Mobile version:</b>
