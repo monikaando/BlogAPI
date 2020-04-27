@@ -6,10 +6,14 @@ class PostsList extends Component {
     constructor(props) {
         super(props);
         this.state={
+            allPosts: [],
             posts: [],
-            err: null
+            err: null,
+            counter: 0
         }
         this.getPosts = this.getPosts.bind(this);
+        // this.pickTheNextPostFromArray = this.pickTheNextPostFromArray.bind(this);
+        this.loadMorePosts= this.loadMorePosts.bind(this);
     }
 
     componentDidMount() {
@@ -26,22 +30,36 @@ class PostsList extends Component {
         })
         .then(res => {
             this.setState({
-                posts: (res.data).slice(0,4)
+                allPosts: res.data,
+                posts: (res.data).slice(0,4)  
             })
             console.log(this.state.posts)
+            console.log(this.state.allPosts)
             console.log((res.data).length)
         })
         .catch((err)=> {
-          console.log( "Not sent :(")
+          console.log( "Not sent")
     })
     }
-    pickTheNextPostFromArray = (anArray)=> {
-        return anArray[Math.floor(Math.random()*anArray.length)];
-    }
-        pickRandomPost = () => {
-        this.setState({
-            posts: [...this.state.posts, this.pickTheNextPostFromArray(this.state.posts), this.pickTheNextPostFromArray(this.state.posts)]
-    })
+
+    // pickTheNextPostFromArray = (array)=> {
+    //     for(let i=4; i<10; i++){
+    //         return array[((array.indexOf(i)) + (this.state.counter + 1))];//5
+    //     }
+    // }
+    // pickTheSecondNextPostFromArray = (array)=> {
+    //     for(let i=4; i<10; i++){
+    //         return array[((array.indexOf(i)) + (this.state.counter + 2))];//6
+    //         break;
+    //     }
+    // }
+    
+    loadMorePosts = () => {
+    this.setState({
+        posts: [...this.state.allPosts],
+        counter: this.state.counter +1
+    }) 
+    console.log(this.state.counter)
     }
   
     render() {
@@ -62,7 +80,7 @@ class PostsList extends Component {
                     </div>
                     ))}
             </div>
-            <button onClick={this.pickRandomPost}>Meer laden</button>
+            <button onClick={this.loadMorePosts}>Meer laden</button>
         </div>
       );
 
