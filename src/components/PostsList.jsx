@@ -78,10 +78,10 @@ class PostsList extends Component {
       if(this.state.firstPage === true && this.state.posts.length === 4){
          button = <button onClick={this.loadMorePostsOnTheFirstPage}>Meer laden</button>
       }
-      else{
+      else {
          button = <button onClick={this.loadMorePosts}>Meer laden</button>
       }
-
+        
       return (
         <div className="blogPosts-box">
             <div className="postsList">
@@ -90,7 +90,12 @@ class PostsList extends Component {
                         <div className="image-box">
                             <img src={post.img_url} alt=""/>
                             <h6>{(post.created_at).slice(0,10)}</h6> 
-                            {/* <p>{post.category.name}</p> */}
+                            {(post.category==null)? (
+                                    <p> </p>
+                                ):(
+                                    <p>{post.category.name}</p>
+                                )   
+                                }
                         </div>
                         <div className="text-box">
                             <h3>{post.title}</h3>
