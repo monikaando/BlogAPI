@@ -90,7 +90,7 @@ class PostsList extends Component {
                         <div className="image-box">
                             <img src={post.img_url} alt=""/>
                             <h6>{(post.created_at).slice(0,10)}</h6> 
-                            {(post.category==null)? (
+                            {(post.category===null || post.category.name===null)? (
                                     <p> </p>
                                 ):(
                                     <p>{post.category.name}</p>
