@@ -53,6 +53,5 @@ To run the application: npm start after installing node modules (npm i)
 </div>
 
 <video width="320" height="240" controls>
-  <source src="https://res.cloudinary.com/mokaweb/video/upload/v1588014869/SocialBrothers/Screen_Recording_2020-04-27_at_21.10.01_kaebdk.mov" type="mov">
-  Your browser does not support the video tag.
+  <source src="https://res.cloudinary.com/mokaweb/video/upload/v1588014869/SocialBrothers/Screen_Recording_2020-04-27_at_21.10.01_kaebdk.mov">
 </video>
