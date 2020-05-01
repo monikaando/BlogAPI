@@ -51,3 +51,8 @@ To run the application: npm start after installing node modules (npm i)
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_317/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
 </div>
+
+<video width="320" height="240" controls>
+  <source src="https://res.cloudinary.com/mokaweb/video/upload/v1588014869/SocialBrothers/Screen_Recording_2020-04-27_at_21.10.01_kaebdk.mov" type="mov">
+  Your browser does not support the video tag.
+</video>
