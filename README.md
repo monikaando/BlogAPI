@@ -40,6 +40,9 @@ To run the application: npm start after installing node modules (npm i)
 <img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
 </div><br><br>
 
+<div style="display: flex; justify-content: center">
+<img src="https://res.cloudinary.com/mokaweb/image/upload/v1588347982/SocialBrothers/popup.png" />
+</div><br><br>
 
 <b>Desktop version + "Meer laden" button</b>
 <div style="display: flex; justify-content: center">
