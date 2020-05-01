@@ -55,7 +55,4 @@ To run the application: npm start after installing node modules (npm i)
 <img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_317/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
 </div>
 
-<video width="320" height="240" controls>
-  <source src="https://drive.google.com/open?id=1J9XgoEej0kjLQ5vFUub315525BPlHnav">
-</video>
 
