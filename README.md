@@ -56,7 +56,7 @@ Social Brothers Blog API
     An additional element with the link to my github page (not visible on pictures below)
     
 ## Visuals
-<a href="https://youtu.be/ONEjL4bPJmA"><b>Video [Desktop version]</b></a>
+<a href="https://youtu.be/ONEjL4bPJmA"><b>Video [Desktop version]</b></a><br>
 <a href="https://youtu.be/42F5kVHw3LQ"><b>Video [Mobile version]</b></a>
 Click a video and see how TapApp works.
 
