@@ -41,7 +41,8 @@ Social Brothers Blog API
     5) I put a popup window after submitting a form. It is informing the user that data was send.
     
 ## Blogposts list
-    1) I created posts to look as similar as possible according to the example image (dimentions, colors, fonts)
+    1) I created posts to look as similar as possible according to the example image (dimentions, colors,
+    fonts)
     2) I show data and type of category on the image (even if category or category name is empty in the 
     database)
     3) With the first contact with the application we can see on the list only 4 blog posts from the first page.
