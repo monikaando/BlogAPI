@@ -55,11 +55,11 @@ Click a video and see how TapApp works.
 <br>
 <b>Desktop version:</b>
 <div style="display: flex; justify-content: center">
-<img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
+<img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_800/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
 </div>
 
 <div style="display: flex; justify-content: center">
-<img src="https://res.cloudinary.com/mokaweb/image/upload/v1588347982/SocialBrothers/popup.png" />
+<img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_800/v1588347982/SocialBrothers/popup.png" />
 </div>
 
 <br>
