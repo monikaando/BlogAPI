@@ -8,6 +8,8 @@
     - [Blogposts list](#blogposts-list)
 * [Footer](#footer)
 * [Visuals](#visuals)
+    - [Video](#video)
+    - [Screen shots](#screen-shots)
 * [Contact](#contact)
 ## Setup
 To run the application: npm start after installing node modules (npm i)
@@ -56,12 +58,13 @@ Social Brothers Blog API
     An additional element with the link to my github page (not visible on pictures below)
     
 ## Visuals
-<a href="https://youtu.be/ONEjL4bPJmA"><b>Video [Desktop version]</b></a><br>
-<a href="https://youtu.be/42F5kVHw3LQ"><b>Video [Mobile version]</b></a><br>
+## Video
+<a href="https://youtu.be/ONEjL4bPJmA"><b>Desktop version</b></a><br>
+<a href="https://youtu.be/42F5kVHw3LQ"><b>Mobile version</b></a><br>
 Click a video and see how TapApp works.
-
 <br>
-<b>Screen shots</b><br>
+
+## Screen shots
 <b>Desktop version:</b>
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_800/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
