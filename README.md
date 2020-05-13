@@ -52,8 +52,8 @@ Social Brothers Blog API
 <a href="https://youtu.be/42F5kVHw3LQ"><b>Video [Mobile version]</b></a>
 Click a video and see how TapApp works.
 
+<br>
 <b>Desktop version:</b>
-
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
 </div>
@@ -62,12 +62,13 @@ Click a video and see how TapApp works.
 <img src="https://res.cloudinary.com/mokaweb/image/upload/v1588347982/SocialBrothers/popup.png" />
 </div>
 
+<br>
 <b>Desktop version + "Meer laden" button</b>
 <div style="display: flex; justify-content: center">
 <img src="http://res.cloudinary.com/mokaweb/image/upload/c_scale,w_665/v1588015143/SocialBrothers/Desktop-meer-laden.png" />
 </div>
 
-
+<br>
 <b>Mobile version:</b>
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_317/v1588015141/SocialBrothers/mobile_pxwr3r.png" />
