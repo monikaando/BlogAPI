@@ -59,8 +59,8 @@ Social Brothers Blog API
     
 ## Visuals
 ## Video
-<a href="https://youtu.be/ONEjL4bPJmA" target="_blank"><b>Desktop version</b></a><br>
-<a href="https://youtu.be/42F5kVHw3LQ" target="_blank"><b>Mobile version</b></a><br>
+<a href="https://youtu.be/ONEjL4bPJmA"><b>Desktop version</b></a><br>
+<a href="https://youtu.be/42F5kVHw3LQ"><b>Mobile version</b></a><br>
 Click a video and see how TapApp works.
 <br>
 
