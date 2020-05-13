@@ -25,31 +25,27 @@ Social Brothers Blog API
 ## Content
 
 ## Header
-    1) The header image is from the www.werkenbijsocialbrothers.nl. I put it on my Cloudinary account.
+    1) The header image is from the www.werkenbijsocialbrothers.nl. I put it on my Cloudinary account. 
     I played with the code to achieve the expected result without cropping the image.
     2) I put a darker filter on the picture.
-    3) I changed the logo color (from gray/orange to white/orange) in a graphic program
-    (according to the example image).
+    3) I changed the logo color (from gray/orange to white/orange) in a graphic program (according to 
+    the example image).
     4) I added a favicon and the title for the website.
     
 ## Form
-    1) I created form to look as similar as possible according to the example image (dimentions,
-    colors, fonts, the same arrow in select option)
+    1) I created form to look as similar as possible according to the example image (dimentions, colors,
+    fonts, the same arrow in select option)
     2) It is possible to extend a text area of "Bericht" vertically.
     3) I added extra frame (orange frame appears when the field is clicked)
     4) Form is sending data to the server through the API
     5) I put a popup window after submitting a form. It is informing the user that data was send.
     
 ## Blogposts list
-    1) I created posts to look as similar as possible according to the example image
-    (dimentions, colors, fonts)
-    2) I show data and type of category on the image (even if category or category name is empty 
-    in the database)
-    3) With the first contact with the application we can see on the list only 4 blog posts from 
-    the first page.
+    1) I created posts to look as similar as possible according to the example image (dimentions, colors, fonts)
+    2) I show data and type of category on the image (even if category or category name is empty in the database)
+    3) With the first contact with the application we can see on the list only 4 blog posts from the first page.
     4) "Meer laden" button:
-        - after the first click we can see those 6 blog posts missing from the first page 
-        (on every page we have 10 blog posts),
+        - after the first click we can see those 6 blog posts missing from the first page (on every page we have 10 blog posts),
         - every another click shows all post from the next pages. 
         
 ## Footer
