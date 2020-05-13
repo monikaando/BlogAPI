@@ -45,8 +45,8 @@ Social Brothers Blog API
     2) I show data and type of category on the image (even if category or category name is empty in the database)
     3) With the first contact with the application we can see on the list only 4 blog posts from the first page.
     4) "Meer laden" button:
-        - after the first click we can see those 6 blog posts missing from the first page (on every page we have
-        10 blog posts),
+        - after the first click we can see those 6 blog posts missing from the first page (on every page we
+        have 10 blog posts),
         - every another click shows all post from the next pages. 
         
 ## Footer
