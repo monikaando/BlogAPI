@@ -61,6 +61,7 @@ Social Brothers Blog API
 Click a video and see how TapApp works.
 
 <br>
+<b>Screen shots</b><br>
 <b>Desktop version:</b>
 <div style="display: flex; justify-content: center">
 <img src="https://res.cloudinary.com/mokaweb/image/upload/c_scale,w_800/v1588015142/SocialBrothers/desktop_ptgcmj.png" />
