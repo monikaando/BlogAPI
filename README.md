@@ -2,6 +2,7 @@
 * [Setup](#setup)
 * [Name](#name)
 * [General info](#general-info)
+* [Stack](#stack)
 * [Content](#content)
     - [Header](#header)
     - [Form](#form)
@@ -23,7 +24,8 @@ Social Brothers Blog API
     4) For images I used Claudinary.
     5) For styling I used Sass(I could use Bootstrap or Bulma (like in my previous projects), 
     but I wanted to show that I know how CSS, Sass and responsivity works.)
-    
+## Stack
+React, CSS, HTML, API
 ## Content
 
 ## Header
